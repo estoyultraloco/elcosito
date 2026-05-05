@@ -4,18 +4,23 @@
   <meta charset="UTF-8">
   <title>botones</title>
   <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-image: url("https://picsum.photos/1920/1080");
-      background-size: cover;
-      background-position: center;
-      font-family: sans-serif;
-    }
+  body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
 
+  background-color: #fdfdfd;
+
+  /* grid tipo cuaderno */
+  background-image:
+    linear-gradient(#dcdcdc 1px, transparent 1px),
+    linear-gradient(90deg, #dcdcdc 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+    
     .grid {
       display: grid;
       grid-template-columns: repeat(6, 80px);
