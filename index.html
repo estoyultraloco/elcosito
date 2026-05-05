@@ -1,1 +1,62 @@
-<h1>TOY LOCO</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>botones</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("https://picsum.photos/1920/1080");
+      background-size: cover;
+      background-position: center;
+      font-family: sans-serif;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(6, 80px);
+      gap: 15px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn {
+      width: 80px;
+      height: 80px;
+      background: rgba(255,255,255,0.8);
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .empty {
+      visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid">
+    <!-- fila 1 (6) -->
+    <button class="btn"></button>
+    <button class="btn"></button>
+    <button class="btn"></button>
+    <button class="btn"></button>
+    <button class="btn"></button>
+    <button class="btn"></button>
+
+    <!-- fila 2 (5 + 1 vacío pa centrar) -->
+    <button class="btn"></button>
+    <button class="btn"></button>
+    <button class="btn"></button>
+    <button class="btn"></button>
+    <button class="btn"></button>
+    <div class="empty"></div>
+  </div>
+
+</body>
+</html>
